@@ -120,6 +120,15 @@
                 <section>
                     <p>The `print()` function is like telling your robot friend to speak. Whatever you put inside the parentheses and quotes, it will display on the screen.</p>
                 </section>
+                <section>
+                    <h2>Another Example</h2>
+                    <pre><code class="language-python" data-line-numbers>print("Python is fun!")
+print(123)</code></pre>
+                </section>
+                <section>
+                    <h2>Your Turn! 🚀</h2>
+                    <p>Write a line of code that prints your favorite quote or a welcome message from you.</p>
+                </section>
             </section>
 
             <!-- Slide 4: Variables -->
@@ -139,6 +148,16 @@ print(age)</code></pre>
                         <strong>Analogy:</strong> Variables are like labeled boxes. You can put something inside the box (like text or a number) and give it a name (the label). When you need the information, you just use the label! <span class="emoji">📦</span>
                     </div>
                 </section>
+                 <section>
+                    <h2>Another Example</h2>
+                    <pre><code class="language-python" data-line-numbers>favorite_subject = "Science"
+number_of_pets = 2
+print("My favorite subject is", favorite_subject)</code></pre>
+                </section>
+                <section>
+                    <h2>Your Turn! 🚀</h2>
+                    <p>Create a variable for your favorite movie and another for the year it was released. Then, print them out.</p>
+                </section>
             </section>
             
             <!-- Slide 5: Data Types -->
@@ -154,10 +173,20 @@ print(age)</code></pre>
                         <li><strong>Float (`float`):</strong> Numbers with decimals. <code>3.14</code>, <code>99.9</code></li>
                     </ul>
                 </section>
+                 <section>
+                    <h2>Checking a Type</h2>
+                    <p>You can use the `type()` function to see what kind of data is in a variable.</p>
+                    <pre><code class="language-python" data-line-numbers>message = "Hi there!"
+print(type(message)) # This will show <class 'str'></code></pre>
+                </section>
                 <section>
                     <div class="analogy">
                         <strong>Analogy:</strong> Think of data types like different kinds of snacks. A <strong>string</strong> is like a sentence on a fruit roll-up. An <strong>integer</strong> is a whole apple 🍎, and a <strong>float</strong> is a sliced apple 🍏.
                     </div>
+                </section>
+                <section>
+                    <h2>Your Turn! 🚀</h2>
+                    <p>Create three variables: one with your name (a string), one with your age (an integer), and one with your height in meters (a float). Use `print()` and `type()` to check their data types.</p>
                 </section>
             </section>
             
@@ -179,6 +208,10 @@ print("Hello, " + name + "!")</code></pre>
                         <strong>Analogy:</strong> `input()` is like asking a friend a question and waiting for them to text you back. Your program waits for their reply before it continues.
                     </div>
                 </section>
+                 <section>
+                    <h2>Your Turn! 🚀</h2>
+                    <p>Write a program that asks the user for their favorite color and then prints a message like, "[Color] is a great color!".</p>
+                </section>
             </section>
 
             <!-- Slide 7: Basic Math -->
@@ -197,7 +230,17 @@ product = a * b     # Multiplication -> 50
 quotient = a / b    # Division -> 2.0</code></pre>
                 </section>
                 <section>
-                    <p>You can perform calculations with numbers stored in variables.</p>
+                    <h2>Another Example</h2>
+                    <pre><code class="language-python" data-line-numbers># Order of operations (PEMDAS) applies!
+result = 5 + 2 * 3  # 2*3 is done first, so result is 11
+
+# Using parentheses
+result_2 = (5 + 2) * 3 # 5+2 is done first, so result is 21
+</code></pre>
+                </section>
+                <section>
+                    <h2>Your Turn! 🚀</h2>
+                    <p>Write a program to calculate the area of a rectangle. Create variables for `length` and `width`, calculate the `area`, and print the result.</p>
                 </section>
             </section>
             
@@ -217,9 +260,13 @@ is_sunny = False</code></pre>
                        <strong>Analogy:</strong> A boolean is like a light switch. It can only be ON (`True`) or OFF (`False`). There's no in-between. <span class="emoji">💡</span>
                     </div>
                 </section>
+                 <section>
+                    <h2>Your Turn! 🚀</h2>
+                    <p>Create two boolean variables: `is_weekend` and `have_homework`. Set them to `True` or `False` depending on your current situation.</p>
+                </section>
             </section>
             
-            <!-- Slide 9: Comparison Operators (Topic with vertical slides) -->
+            <!-- Slide 9: Comparison Operators -->
             <section>
                 <section>
                     <h1>Making Comparisons</h1>
@@ -231,11 +278,6 @@ is_sunny = False</code></pre>
                         <li>`==` : Is equal to?</li>
                         <li>`!=` : Is not equal to?</li>
                         <li>`>`  : Is greater than?</li>
-                    </ul>
-                </section>
-                <section>
-                    <h1>More Operators</h1>
-                     <ul>
                         <li>`<`  : Is less than?</li>
                         <li>`>=` : Is greater than or equal to?</li>
                         <li>`<=` : Is less than or equal to?</li>
@@ -249,12 +291,16 @@ print(age > 13)  # This will print: True
 my_grade = 95
 print(my_grade == 100) # This will print: False</code></pre>
                 </section>
+                <section>
+                    <h2>Your Turn! 🚀</h2>
+                    <p>Write code to check if the number `50` is less than or equal to `100`. Print the result. What do you expect to see?</p>
+                </section>
             </section>
             
             <!-- Slide 10: `if` Statement -->
             <section>
                 <section>
-                    <h1>Control Flow: Making Decisions</h1>
+                    <h1>Control Flow: `if` Statements</h1>
                     <p>An `if` statement runs a block of code <em>only if</em> a certain condition is `True`.</p>
                 </section>
                 <section>
@@ -266,6 +312,10 @@ if age >= 18:
                     <div class="analogy">
                         <strong>Analogy:</strong> An `if` statement is like a fork in the road with a sign. If the sign says "Road Open" (`True`), you go down that path. If not, you just continue on the main road.
                     </div>
+                </section>
+                 <section>
+                    <h2>Your Turn! 🚀</h2>
+                    <p>Create a variable `temperature` and set it to a value. Write an `if` statement that prints "It's a hot day!" if the temperature is greater than 30.</p>
                 </section>
             </section>
 
@@ -286,6 +336,10 @@ else:
                      <div class="analogy">
                         <strong>Analogy:</strong> You're at a vending machine. <strong>IF</strong> you have enough money, you buy a snack. <strong>ELSE</strong> (if you don't), you walk away hungry.
                     </div>
+                </section>
+                <section>
+                    <h2>Your Turn! 🚀</h2>
+                    <p>Write an `if...else` statement. If a variable `money` is greater than 50, print "I can buy the game!". Otherwise, print "I need to save more money."</p>
                 </section>
             </section>
             
@@ -309,9 +363,13 @@ else:
                 <section>
                     <p>Python runs the code for the *first* condition that is `True`.</p>
                 </section>
+                <section>
+                    <h2>Your Turn! 🚀</h2>
+                    <p>Write a program that checks a variable `day`. If it's "Saturday" or "Sunday", print "It's the weekend!". If it's "Friday", print "Almost there!". Otherwise, print "It's a weekday."</p>
+                </section>
             </section>
 
-            <!-- Slide 13: Recap (Topic with vertical slides) -->
+            <!-- Slide 13: Recap -->
             <section>
                 <section>
                     <h1>Let's Recap! 🚀</h1>
