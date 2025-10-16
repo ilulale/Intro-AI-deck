@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Introduction to Python: A Beginner's Guide</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/white.min.css" id="theme">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/monokai.min.css">
+    <style>
+        /* Custom styles with the new color scheme */
+        :root {
+            --r-background-color: #fffff7;
+            --r-main-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --r-heading-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --r-main-color: #333;
+            --r-heading-color: #333; /* Dark color for readability */
+            
+            /* New color palette */
+            --color-champagne: #f5d4a9;
+            --color-apricot: #fcbda2;
+            --color-light-green: #a2fcba;
+            --color-aquamarine: #7febc7;
+        }
+        
+        .reveal {
+            color: var(--r-main-color);
+        }
+
+        .reveal .slides section h1,
+        .reveal .slides section h2 {
+            color: var(--r-heading-color);
+        }
+        
+        .reveal .slides section h1 {
+            border-bottom: 4px solid var(--color-apricot);
+            padding-bottom: 20px;
+        }
+
+        .analogy {
+            background-color: var(--color-champagne);
+            border-left: 5px solid var(--color-aquamarine);
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 8px;
+            font-style: italic;
+            text-align: left;
+        }
+
+        /* Style for inline code snippets */
+        .reveal :not(pre) > code {
+            background-color: #e1fef0; /* Lighter shade of #a2fcba for readability */
+            padding: 3px 6px;
+            border-radius: 4px;
+        }
+        
+        .code-example {
+            text-align: left;
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        .emoji {
+            font-size: 4rem;
+            border: none;
+            box-shadow: none;
+            background: none;
+        }
+        
+        .reveal pre code {
+            border-radius: 8px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Slide 1: Title -->
+            <section>
+                <h1>Welcome to the World of Python! 🐍</h1>
+                <h2>Your Adventure in Programming Begins Now</h2>
+                <p style="margin-top: 50px;">A beginner's guide for students.</p>
+            </section>
+
+            <!-- Slide 2: What is Python? -->
+            <section>
+                <section>
+                    <h1>What is Python?</h1>
+                    <p>Python is a popular, easy-to-learn programming language.</p>
+                </section>
+                <section>
+                     <ul>
+                        <li>It uses simple, English-like commands.</li>
+                        <li>It's versatile: used for websites, games, AI, and more!</li>
+                        <li>It's like a universal translator for talking to computers.</li>
+                    </ul>
+                </section>
+                <section>
+                    <div class="analogy">
+                        <strong>Analogy:</strong> Think of Python as a friendly robot. You give it simple, clear instructions in a language you both understand, and it performs tasks for you. <span class="emoji">🤖</span>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Slide 3: Your First Program -->
+            <section>
+                <section>
+                    <h1>Hello, World!</h1>
+                    <p>Let's write our first instruction: making the computer say "Hello, World!".</p>
+                </section>
+                <section>
+                    <pre><code class="language-python" data-line-numbers>print("Hello, World!")</code></pre>
+                </section>
+                <section>
+                    <p>The `print()` function is like telling your robot friend to speak. Whatever you put inside the parentheses and quotes, it will display on the screen.</p>
+                </section>
+            </section>
+
+            <!-- Slide 4: Variables -->
+            <section>
+                <section>
+                    <h1>Variables: Storing Information</h1>
+                    <p>In programming, we need places to store information. These are called <strong>variables</strong>.</p>
+                </section>
+                <section>
+                     <pre><code class="language-python" data-line-numbers>student_name = "Alex"
+age = 15
+print(student_name)
+print(age)</code></pre>
+                </section>
+                <section>
+                    <div class="analogy">
+                        <strong>Analogy:</strong> Variables are like labeled boxes. You can put something inside the box (like text or a number) and give it a name (the label). When you need the information, you just use the label! <span class="emoji">📦</span>
+                    </div>
+                </section>
+            </section>
+            
+            <!-- Slide 5: Data Types -->
+            <section>
+                <section>
+                    <h1>Data Types: What's in the Box?</h1>
+                    <p>Variables can hold different types of data.</p>
+                </section>
+                <section>
+                    <ul>
+                        <li><strong>String (`str`):</strong> Plain text. Always inside quotes. <code>"Hello"</code></li>
+                        <li><strong>Integer (`int`):</strong> Whole numbers. <code>10</code>, <code>-5</code>, <code>101</code></li>
+                        <li><strong>Float (`float`):</strong> Numbers with decimals. <code>3.14</code>, <code>99.9</code></li>
+                    </ul>
+                </section>
+                <section>
+                    <div class="analogy">
+                        <strong>Analogy:</strong> Think of data types like different kinds of snacks. A <strong>string</strong> is like a sentence on a fruit roll-up. An <strong>integer</strong> is a whole apple 🍎, and a <strong>float</strong> is a sliced apple 🍏.
+                    </div>
+                </section>
+            </section>
+            
+            <!-- Slide 6: Getting User Input -->
+            <section>
+                <section>
+                    <h1>Getting User Input</h1>
+                    <p>You can make your programs interactive by asking the user for information with the `input()` function.</p>
+                </section>
+                <section>
+                    <pre><code class="language-python" data-line-numbers># Ask the user for their name
+name = input("What's your name? ")
+
+# Say hello to the user
+print("Hello, " + name + "!")</code></pre>
+                </section>
+                <section>
+                    <div class="analogy">
+                        <strong>Analogy:</strong> `input()` is like asking a friend a question and waiting for them to text you back. Your program waits for their reply before it continues.
+                    </div>
+                </section>
+            </section>
+
+            <!-- Slide 7: Basic Math -->
+            <section>
+                <section>
+                    <h1>Let's Do Some Math!</h1>
+                    <p>Python can work as a powerful calculator.</p>
+                </section>
+                <section>
+                    <pre><code class="language-python" data-line-numbers>a = 10
+b = 5
+
+sum = a + b         # Addition -> 15
+difference = a - b  # Subtraction -> 5
+product = a * b     # Multiplication -> 50
+quotient = a / b    # Division -> 2.0</code></pre>
+                </section>
+                <section>
+                    <p>You can perform calculations with numbers stored in variables.</p>
+                </section>
+            </section>
+            
+            <!-- Slide 8: Booleans -->
+            <section>
+                <section>
+                    <h1>Booleans: True or False?</h1>
+                    <p>A boolean is a data type that can only have one of two values: <strong>`True`</strong> or <strong>`False`</strong>.</p>
+                </section>
+                <section>
+                     <p>These are crucial for making decisions in your code.</p>
+                     <pre><code class="language-python" data-line-numbers>is_raining = True
+is_sunny = False</code></pre>
+                </section>
+                <section>
+                    <div class="analogy">
+                       <strong>Analogy:</strong> A boolean is like a light switch. It can only be ON (`True`) or OFF (`False`). There's no in-between. <span class="emoji">💡</span>
+                    </div>
+                </section>
+            </section>
+            
+            <!-- Slide 9: Comparison Operators (Topic with vertical slides) -->
+            <section>
+                <section>
+                    <h1>Making Comparisons</h1>
+                    <p>We can compare values, and the result is always a boolean (`True` or `False`).</p>
+                </section>
+                <section>
+                    <h1>Operators</h1>
+                    <ul>
+                        <li>`==` : Is equal to?</li>
+                        <li>`!=` : Is not equal to?</li>
+                        <li>`>`  : Is greater than?</li>
+                    </ul>
+                </section>
+                <section>
+                    <h1>More Operators</h1>
+                     <ul>
+                        <li>`<`  : Is less than?</li>
+                        <li>`>=` : Is greater than or equal to?</li>
+                        <li>`<=` : Is less than or equal to?</li>
+                    </ul>
+                </section>
+                <section>
+                    <h1>Comparing in Action</h1>
+                    <pre><code class="language-python" data-line-numbers>age = 16
+print(age > 13)  # This will print: True
+
+my_grade = 95
+print(my_grade == 100) # This will print: False</code></pre>
+                </section>
+            </section>
+            
+            <!-- Slide 10: `if` Statement -->
+            <section>
+                <section>
+                    <h1>Control Flow: Making Decisions</h1>
+                    <p>An `if` statement runs a block of code <em>only if</em> a certain condition is `True`.</p>
+                </section>
+                <section>
+                    <pre><code class="language-python" data-line-numbers>age = 18
+if age >= 18:
+    print("You are old enough to vote!")</code></pre>
+                </section>
+                <section>
+                    <div class="analogy">
+                        <strong>Analogy:</strong> An `if` statement is like a fork in the road with a sign. If the sign says "Road Open" (`True`), you go down that path. If not, you just continue on the main road.
+                    </div>
+                </section>
+            </section>
+
+            <!-- Slide 11: `if...else` Statements -->
+            <section>
+                <section>
+                    <h1>The `else` Statement: Plan B</h1>
+                    <p>The `else` statement lets you provide an alternative block of code to run if the `if` condition is `False`.</p>
+                </section>
+                <section>
+                    <pre><code class="language-python" data-line-numbers>age = 15
+if age >= 18:
+    print("You can vote!")
+else:
+    print("You are not old enough to vote yet.")</code></pre>
+                </section>
+                <section>
+                     <div class="analogy">
+                        <strong>Analogy:</strong> You're at a vending machine. <strong>IF</strong> you have enough money, you buy a snack. <strong>ELSE</strong> (if you don't), you walk away hungry.
+                    </div>
+                </section>
+            </section>
+            
+            <!-- Slide 12: `if...elif...else` Statements -->
+            <section>
+                <section>
+                    <h1>`elif`: Multiple Choices</h1>
+                    <p>`elif` stands for "else if". It lets you check for multiple conditions in a sequence.</p>
+                </section>
+                <section>
+                    <pre><code class="language-python" data-line-numbers>score = 85
+if score >= 90:
+    print("Grade: A")
+elif score >= 80:
+    print("Grade: B")
+elif score >= 70:
+    print("Grade: C")
+else:
+    print("Grade: F")</code></pre>
+                </section>
+                <section>
+                    <p>Python runs the code for the *first* condition that is `True`.</p>
+                </section>
+            </section>
+
+            <!-- Slide 13: Recap (Topic with vertical slides) -->
+            <section>
+                <section>
+                    <h1>Let's Recap! 🚀</h1>
+                </section>
+                <section>
+                    <p>Today we learned about:</p>
+                    <ul>
+                        <li>What <strong>Python</strong> is and how to `print()`.</li>
+                        <li><strong>Variables</strong> for storing data.</li>
+                        <li><strong>Data Types</strong> like strings, integers, and floats.</li>
+                    </ul>
+                </section>
+                <section>
+                    <p>We also covered:</p>
+                     <ul>
+                        <li>Getting user <strong>`input()`</strong>.</li>
+                        <li><strong>Booleans</strong> (`True`/`False`) and <strong>Comparisons</strong>.</li>
+                        <li><strong>Control Flow</strong> with `if`, `elif`, and `else`.</li>
+                    </ul>
+                </section>
+                 <section>
+                     <h1>You're on your way!</h1>
+                     <p style="margin-top: 50px;">You've taken your first big step into programming!</p>
+                </section>
+            </section>
+            
+            <!-- Slide 14: Q&A -->
+            <section>
+                <h1>Questions?</h1>
+                <p class="emoji" style="margin-top: 100px;">🤔❓</p>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/notes/notes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/markdown/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+        });
+    </script>
+</body>
+</html>
+
+
