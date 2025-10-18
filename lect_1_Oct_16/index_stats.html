@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>The Secret Code of AI</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css" id="theme">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/monokai.min.css">
+	<style>
+		/* Custom styles to make the presentation look great */
+		.reveal {
+			font-family: 'Inter', 'sans-serif';
+		}
+		
+		.reveal h1,
+		.reveal h2,
+		.reveal h3 {
+			text-transform: none;
+			font-weight: 700;
+		}
+
+		.reveal .placeholder {
+			background-color: #333;
+			color: #888;
+			border: 2px dashed #555;
+			padding: 2rem;
+			border-radius: 15px;
+			text-align: center;
+			width: 70%;
+			margin: 20px auto;
+			box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+		}
+
+		.reveal .fragment.fade-in-then-out {
+			opacity: 0;
+			display: none;
+		}
+
+		.reveal .fragment.fade-in-then-out.visible {
+			opacity: 1;
+			display: inherit;
+		}
+
+		.reveal .fragment.fade-in-then-out.hidden {
+			opacity: 0;
+			display: none;
+		}
+		
+		.reveal pre code {
+			border-radius: 10px;
+		}
+
+        .reveal .small-text {
+            font-size: 0.7em;
+        }
+	</style>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<!-- Slide 1: Title -->
+			<section>
+				<h2>The Secret Code of AI</h2>
+				<h1>Unlocking the Math Behind the Magic</h1>
+                <p class="small-text">Press the arrow keys to navigate</p>
+			</section>
+
+			<!-- Slide 2: Why Does AI Need Math? (Section) -->
+			<section>
+				<section>
+					<h2>Why Does AI Need Math?</h2>
+					<div class="placeholder">
+						<!-- Image Placeholder -->
+						<img src='brain_with_symbola.png'/>
+						<p>Image: Brain with math symbols</p>
+					</div>
+				</section>
+				<section>
+					<h3>What is AI?</h3>
+					<p>AI helps computers learn and make smart decisions, just like humans.</p>
+				</section>
+				<section>
+					<h3>Why Math?</h3>
+					<p>Math is the <strong>language</strong> computers use to "think." It gives them a set of rules to understand the world.</p>
+				</section>
+				<section>
+					<h3>The Recipe for AI</h3>
+					<p>You can't bake a cake without a recipe. Math is the <strong>recipe</strong> for AI.</p>
+				</section>
+				<section>
+					<h3>Today's Key Ingredients</h3>
+					<ul>
+						<li class="fragment"><strong>Linear Algebra:</strong> The language of data.</li>
+						<li class="fragment"><strong>Calculus:</strong> The science of change and learning.</li>
+						<li class="fragment"><strong>Statistics & Probability:</strong> The art of making smart guesses.</li>
+					</ul>
+				</section>
+			</section>
+
+			<!-- Slide 3: Linear Algebra (Section) -->
+			<section>
+				<section>
+					<h2>Section 1: Linear Algebra</h2>
+					<h3>The Language of Data</h3>
+					<div class="placeholder">
+						<!-- Image Placeholder -->
+							<img src='lang_of_data.png'/>
+					</div>
+				</section>
+				<section>
+					<h3>What it is</h3>
+					<p>A way to organize information into lists and grids so a computer can work with it. Everything in AI, from your selfie to this sentence, is turned into numbers.</p>
+				</section>
+				<section>
+					<h3>Key Idea: Vectors and Matrices</h3>
+					<p>The building blocks of data in AI.</p>
+				</section>
+				<section>
+					<h3>Vector</h3>
+					<p>Just a list of numbers. Think of a character's stats in a video game.</p>
+					<p class="fragment">Example: Pikachu's stats could be a vector: <strong>[HP, Attack, Defense]</strong> → <strong>[35, 55, 40]</strong></p>
+				</section>
+				<section>
+					<h3>Matrix</h3>
+					<p>A grid of numbers (a list of vectors!). This is how computers see images. Each number is a pixel's color and brightness.</p>
+				</section>
+                <section>
+                    <h3>Why it's important</h3>
+                    <p>It allows a computer to process huge amounts of data (like millions of pixels in a photo) all at once, making things like facial recognition possible.</p>
+                </section>
+				<section>
+					<h3>Your Turn!</h3>
+				</section>
+				<section>
+					<h4>Problem 1: Vector Vision</h4>
+					<p>Describe a character with:</p>
+					<ul>
+						<li>Speed: 9</li>
+						<li>Strength: 5</li>
+						<li>Magic: 0</li>
+					</ul>
+					<p class="fragment">How would you write this as a vector?</p>
+					<pre class="fragment"><code data-trim data-noescape>
+						[9, 5, 0]
+					</code></pre>
+				</section>
+				<section>
+					<h4>Problem 2: The Image Matrix</h4>
+					<p>Create a 3x3 matrix for a simple black and white cross. (1 = Black, 0 = White)</p>
+                    <p>⚫⚪⚫<br>⚪⚪⚪<br>⚫⚪⚫</p>
+					<pre class="fragment"><code data-trim data-noescape>
+						[
+						  [1, 0, 1],
+						  [0, 0, 0],
+						  [1, 0, 1]
+						]
+					</code></pre>
+				</section>
+			</section>
+
+			<!-- Slide 4: Calculus (Section) -->
+			<section>
+				<section>
+					<h2>Section 2: Calculus</h2>
+					<h3>The Science of Learning</h3>
+					<div class="placeholder">
+						<!-- Image Placeholder -->
+							<img src='calculus_img.png'/>
+					</div>
+				</section>
+				<section>
+					<h3>What it is</h3>
+					<p>Calculus is the math of tiny changes. In AI, it's used to help the model learn from its mistakes and get better over time.</p>
+				</section>
+				<section>
+					<h3>Key Idea: Gradient Descent</h3>
+					<p>Imagine you're on a foggy mountain and want to get to the very bottom.</p>
+				</section>
+				<section>
+					<p>You can't see far, so you take a small step in the direction that goes down the most.</p>
+				</section>
+                <section>
+                    <p>You repeat this over and over until you can't go down anymore. That's Gradient Descent.</p>
+                </section>
+				<section>
+					<h3>Calculus in AI</h3>
+					<p>The "mountain" is the AI's <strong>error</strong>. The AI uses calculus to find the "steepest downhill direction" and adjusts its settings (takes a step) to make its error a little smaller.</p>
+				</section>
+				<section>
+					<h3>Your Turn!</h3>
+				</section>
+				<section>
+					<h4>Problem: Find the Mistake!</h4>
+					<p>An AI is guessing a number. The correct answer is <strong>7</strong>.</p>
+					<ul>
+						<li><strong>Attempt 1:</strong> Guesses 2. Error is 7 - 2 = <strong>5</strong>.</li>
+						<li><strong>Attempt 2:</strong> Guesses 9. Error is 7 - 9 = <strong>-2</strong>.</li>
+					</ul>
+                    <p class="fragment">Which attempt had a bigger error?</p>
+				</section>
+                <section>
+                    <h4>Answer</h4>
+                    <p>Attempt 1 had the bigger error (5 vs 2).</p>
+                    <p class="fragment">After guessing 2, it should guess <strong>higher</strong>.</p>
+                    <p class="fragment">After guessing 9, it should guess <strong>lower</strong>.</p>
+                    <p class="fragment">Calculus helps the AI do this automatically!</p>
+                </section>
+			</section>
+            
+            <!-- Slide 5: Stats & Probability (Section) -->
+            <section>
+                <section>
+                    <h2>Statistics & Probability</h2>
+                    <h3>The Art of Smart Guesses</h3>
+                    <div class="placeholder">
+						<!-- Image Placeholder -->
+							<img src='charts_and_prob.png'/>
+					</div>
+                </section>
+                <section>
+                    <h3>What they are</h3>
+                    <p><strong>Statistics:</strong> Collecting and analyzing data to find patterns.</p>
+                    <p><strong>Probability:</strong> The chance of something happening. Helps AI deal with uncertainty.</p>
+                </section>
+                <section>
+                    <h3>Key Idea: Bayes' Theorem</h3>
+                    <p>A rule that helps an AI update its beliefs when it gets new information.</p>
+                </section>
+                <section>
+                    <h4>Example: Medical Diagnosis</h4>
+                    <p><strong>Initial Belief:</strong> The probability of a rare disease is low (1%).</p>
+                    <p class="fragment"><strong>New Evidence:</strong> The person gets a positive test result.</p>
+                    <p class="fragment"><strong>Updated Belief:</strong> Bayes' Theorem combines both to calculate a new, more accurate probability.</p>
+                </section>
+                <section>
+					<h3>Your Turn!</h3>
+				</section>
+                <section>
+                    <h4>Problem: Spam Email Detector</h4>
+                    <p>An AI has learned:</p>
+                    <ul>
+                        <li>Emails with "winner" are <strong>90%</strong> likely to be spam.</li>
+                        <li>Emails with a friend's name are <strong>5%</strong> likely to be spam.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Which is more likely to be spam?</h4>
+                    <p>A) "You are the lucky <strong>winner</strong>!"</p>
+                    <p>B) "Hey, it's <strong>Sarah</strong>, check this out."</p>
+                    <p class="fragment"><strong>Answer: A.</strong> The AI uses probability to make this smart guess based on statistical patterns.</p>
+                </section>
+            </section>
+
+            <!-- Slide 6: Putting It All Together (Section) -->
+            <section>
+                <section>
+                    <h2>Putting It All Together</h2>
+                    <div class="placeholder">
+						<!-- Image Placeholder -->
+							<img src='flowchart.png'/>
+					</div>
+                </section>
+                <section>
+                    <h3>You see an image of a cat. What happens?</h3>
+                </section>
+                <section>
+                    <h4>Step 1: Linear Algebra</h4>
+                    <p>Turns the image into a giant <strong>matrix</strong> of numbers (pixels).</p>
+                </section>
+                <section>
+                    <h4>Step 2: First Guess</h4>
+                    <p>The AI makes a first guess: "I'm 40% sure it's a cat."</p>
+                </section>
+                <section>
+                    <h4>Step 3: Calculus</h4>
+                    <p>Helps the AI see it made an error. It uses <strong>Gradient Descent</strong> to adjust its settings to be a little bit better at recognizing cats.</p>
+                </section>
+                <section>
+                    <h4>Step 4: Probability & Statistics</h4>
+                    <p>After millions of training examples, it says: "Based on all the patterns I've learned, I am <strong>99%</strong> sure this is a cat."</p>
+                </section>
+            </section>
+
+		</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/notes/notes.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/markdown/markdown.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
+

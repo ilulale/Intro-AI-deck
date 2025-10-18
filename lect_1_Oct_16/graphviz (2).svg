@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="972pt" height="186pt" viewBox="0.00 0.00 972.00 186.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 181.66)">
+<title>AI_Flowchart</title>
+<polygon fill="#f9f9f9" stroke="none" points="-4,4 -4,-181.66 968.26,-181.66 968.26,4 -4,4"/>
+<!-- start -->
+<g id="node1" class="node">
+<title>start</title>
+<path fill="#e3f2fd" stroke="#90caf9" stroke-width="1.5" d="M148.6,-166.25C148.6,-166.25 12,-166.25 12,-166.25 6,-166.25 0,-160.25 0,-154.25 0,-154.25 0,-142.25 0,-142.25 0,-136.25 6,-130.25 12,-130.25 12,-130.25 148.6,-130.25 148.6,-130.25 154.6,-130.25 160.6,-136.25 160.6,-142.25 160.6,-142.25 160.6,-154.25 160.6,-154.25 160.6,-160.25 154.6,-166.25 148.6,-166.25"/>
+<text xml:space="preserve" text-anchor="middle" x="80.3" y="-144.05" font-family="Inter, sans-serif" font-size="14.00" fill="#333333">You see an image of a cat</text>
+</g>
+<!-- step1 -->
+<g id="node2" class="node">
+<title>step1</title>
+<g id="a_node2"><a xlink:title="The image is turned into a giant matrix of numbers (pixels).">
+<path fill="#e1bee7" stroke="#ba68c8" stroke-width="1.5" d="M343.25,-171.65C343.25,-174.52 311,-176.85 271.3,-176.85 231.6,-176.85 199.35,-174.52 199.35,-171.65 199.35,-171.65 199.35,-124.85 199.35,-124.85 199.35,-121.98 231.6,-119.65 271.3,-119.65 311,-119.65 343.25,-121.98 343.25,-124.85 343.25,-124.85 343.25,-171.65 343.25,-171.65"/>
+<path fill="none" stroke="#ba68c8" stroke-width="1.5" d="M343.25,-171.65C343.25,-168.78 311,-166.45 271.3,-166.45 231.6,-166.45 199.35,-168.78 199.35,-171.65"/>
+<text xml:space="preserve" text-anchor="middle" x="271.3" y="-152.45" font-family="Inter, sans-serif" font-size="14.00" fill="#333333">Step 1: Linear Algebra</text>
+<text xml:space="preserve" text-anchor="middle" x="271.3" y="-135.65" font-family="Inter, sans-serif" font-size="14.00" fill="#333333">(Image to Matrix)</text>
+</a>
+</g>
+</g>
+<!-- start&#45;&gt;step1 -->
+<g id="edge1" class="edge">
+<title>start-&gt;step1</title>
+<path fill="none" stroke="#444444" d="M161.26,-153.53C168.79,-153.36 177.29,-153.06 187.26,-152.62"/>
+<polygon fill="#444444" stroke="#444444" points="187.32,-156.12 197.15,-152.16 187,-149.13 187.32,-156.12"/>
+</g>
+<!-- step2 -->
+<g id="node3" class="node">
+<title>step2</title>
+<ellipse fill="#fff9c4" stroke="#ffd54f" stroke-width="1.5" stroke-dasharray="5,2" cx="530.3" cy="-148.25" rx="108.73" ry="29.42"/>
+<text xml:space="preserve" text-anchor="middle" x="530.3" y="-152.45" font-family="Inter, sans-serif" font-size="14.00" fill="#333333">Step 2: First Guess</text>
+<text xml:space="preserve" text-anchor="middle" x="530.3" y="-135.65" font-family="Inter, sans-serif" font-size="14.00" fill="#333333">"I'm 40% sure it's a cat."</text>
+</g>
+<!-- step1&#45;&gt;step2 -->
+<g id="edge2" class="edge">
+<title>step1-&gt;step2</title>
+<path fill="none" stroke="#444444" d="M343.87,-169.35C365.94,-172.62 388.78,-171.47 426.58,-165.92"/>
+<polygon fill="#444444" stroke="#444444" points="426.8,-169.43 436.16,-164.47 425.75,-162.51 426.8,-169.43"/>
+</g>
+<!-- step3 -->
+<g id="node4" class="node">
+<title>step3</title>
+<g id="a_node4"><a xlink:title="AI uses Gradient Descent to adjust its settings, learning from its error.">
+<polygon fill="#c5cae9" stroke="#7986cb" stroke-width="1.5" points="592.79,-44.22 455.81,-44.22 455.81,-14.62 592.79,-14.62 604.79,-29.42 592.79,-44.22"/>
+<text xml:space="preserve" text-anchor="middle" x="530.3" y="-33.62" font-family="Inter, sans-serif" font-size="14.00" fill="#333333">Step 3: Calculus</text>
+<text xml:space="preserve" text-anchor="middle" x="530.3" y="-16.82" font-family="Inter, sans-serif" font-size="14.00" fill="#333333">(Learning &amp; Adjusting)</text>
+</a>
+</g>
+</g>
+<!-- step2&#45;&gt;step3 -->
+<g id="edge3" class="edge">
+<title>step2-&gt;step3</title>
+<path fill="none" stroke="#444444" d="M541.84,-118.4C549.95,-95.3 550.21,-83.86 542.62,-61.51"/>
+<polygon fill="#444444" stroke="#444444" points="545.95,-60.42 539.24,-52.21 539.37,-62.81 545.95,-60.42"/>
+<text xml:space="preserve" text-anchor="middle" x="560" y="-91.83" font-family="Inter, sans-serif" font-size="10.00" fill="#555555">Error detected,</text>
+<text xml:space="preserve" text-anchor="middle" x="560" y="-79.83" font-family="Inter, sans-serif" font-size="10.00" fill="#555555">begin learning</text>
+</g>
+<!-- step4 -->
+<g id="node5" class="node">
+<title>step4</title>
+<g id="a_node5"><a xlink:title="Based on patterns, the AI makes a high-confidence decision.">
+<ellipse fill="#c8e6c9" stroke="#81c784" stroke-width="1.5" cx="830.3" cy="-29.42" rx="133.96" ry="29.42"/>
+<text xml:space="preserve" text-anchor="middle" x="830.3" y="-33.62" font-family="Inter, sans-serif" font-size="14.00" fill="#333333">Step 4: Probability &amp; Statistics</text>
+<text xml:space="preserve" text-anchor="middle" x="830.3" y="-16.82" font-family="Inter, sans-serif" font-size="14.00" fill="#333333">"I am 99% sure this is a cat."</text>
+</a>
+</g>
+</g>
+<!-- step3&#45;&gt;step4 -->
+<g id="edge4" class="edge">
+<title>step3-&gt;step4</title>
+<path fill="none" stroke="#444444" d="M605.44,-23.24C645.1,-20.07 674,-18.02 697.1,-17.08"/>
+<polygon fill="#444444" stroke="#444444" points="696.94,-20.59 706.82,-16.75 696.7,-13.59 696.94,-20.59"/>
+</g>
+</g>
+</svg>
